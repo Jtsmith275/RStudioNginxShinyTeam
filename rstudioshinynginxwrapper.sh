@@ -21,7 +21,8 @@ rm rstudio-server-latest-amd64.deb
 sudo apt-get install nginx -y
 
 # Configure nginx with RStudio-Server and Shiny-Server virtualhosts
-sudo wget https://raw.githubusercontent.com/Jtsmith275/RStudioNginxShinyTeam/master/default -O /etc/nginx/sites-enabled/default
+
+sudo wget https://raw.githubusercontent.com/Jtsmith275/RStudioNginxShinyTeam/master/default -O /etc/shiny-server/shiny-server.conf
 
 # Install Ubuntu packages
 sudo apt-get update && sudo apt-get install -y \
